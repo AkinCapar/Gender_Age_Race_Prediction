@@ -3,6 +3,6 @@ numpy
 seaborn
 scikit-learn
 tensorflow
-gradio
+gradio==4.44.1
 huggingface_hub==0.23.2
 pillow
