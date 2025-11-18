@@ -29,7 +29,6 @@ class Predictor:
         }
 
     def preprocess_image(self, img):
-        img = np.array(img)
         img = tf.image.resize(img, (200, 200))
         img = tf.image.convert_image_dtype(img, tf.float32)
         img = np.expand_dims(img, axis=0)
