@@ -43,6 +43,9 @@ class Predictor:
         race_pred   = np.argmax(preds["race_output"], axis=1)[0]
         age_pred    = np.argmax(preds["age_output"], axis=1)[0]
 
+        print("RAW PRED:", preds)
+        print("TYPE:", type(preds))
+
         return {
             "gender": self.gender_map[gender_pred],
             "race": self.race_map[race_pred],
