@@ -3,6 +3,8 @@ numpy
 seaborn
 scikit-learn
 tensorflow
-gradio==4.44.1
 huggingface_hub==0.23.2
 pillow
+gradio==4.44.1
+gradio==4.44.1 --force-reinstall --no-deps
+
