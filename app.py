@@ -19,9 +19,10 @@ interface = gr.Interface(
     outputs=gr.Textbox(),
     title="Gender, Age & Race Prediction",
     description="Upload an face image and get predictions. Please only upload .jpg files.",
-    allow_flagging="never"
+    allow_flagging="never",
+    api_mode="legacy"
 )
 
 if __name__ == "__main__":
     
-    interface.launch()
+    interface.launch(share=True)
