@@ -22,6 +22,8 @@ interface = gr.Interface(
     allow_flagging="never"  
 )
 
-if __name__ == "__main__":
+app = interface 
+
+"""if __name__ == "__main__":
     
-    interface.launch(share=True)
+    interface.launch(share=True)"""
