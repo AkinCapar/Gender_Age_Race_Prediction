@@ -16,9 +16,10 @@ def predict_image(img):
 interface = gr.Interface(
     fn=predict_image,
     inputs=gr.Image(type="pil"),
-    outputs="text",
+    outputs=gr.Textbox(),
     title="Gender, Age & Race Prediction",
-    description="Upload an image and get predictions.",
+    description="Upload an face image and get predictions. Please only upload .jpg files.",
+    allow_flagging="never"
 )
 
-interface.launch(server_name="0.0.0.0")
+interface.launch()
