@@ -22,4 +22,6 @@ interface = gr.Interface(
     allow_flagging="never"
 )
 
-interface.launch()
+if __name__ == "__main__":
+    
+    interface.launch()
